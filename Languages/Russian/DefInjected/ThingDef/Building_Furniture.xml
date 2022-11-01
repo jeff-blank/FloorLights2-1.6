@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <FloorLightSquare.label>встроенная лампа (квадрат)</FloorLightSquare.label>
+  <FloorLightSquare.description>Квадратная встроенная в пол световая панель. Водонепроницаема и довольно красива.</FloorLightSquare.description>
+  
+  <FloorLightStripe.label>встроенная лампа (широкая полоса)</FloorLightStripe.label>
+  <FloorLightStripe.description>Встроенная в пол световая панель в виде широкой полосы. Водонепроницаема и довольно красива.</FloorLightStripe.description>
+  
+  <FloorLightSmallStripe.label>встроенная лампа (узкая полоса)</FloorLightSmallStripe.label>
+  <FloorLightSmallStripe.description>Встроенная в пол световая панель в виде узкой полосы. Водонепроницаема и довольно красива.</FloorLightSmallStripe.description>
+  
+  <FloorLightPlus.label>встроенная лампа (плюс)</FloorLightPlus.label>
+  <FloorLightPlus.description>Встроенная в пол световая панель в виде плюса. Водонепроницаема и довольно красива.</FloorLightPlus.description>
+  
+  <FloorLightCorner.label>встроенная лампа (широкий угол)</FloorLightCorner.label>
+  <FloorLightCorner.description>Сложенная углом из широких полос встроенная в пол световая панель. Водонепроницаема и довольно красива.</FloorLightCorner.description>
+  
+  <FloorLightCornerSmall.label>встроенная лампа (узкий угол)</FloorLightCornerSmall.label>
+  <FloorLightCornerSmall.description>Сложенная углом из узких полос встроенная в пол световая панель. Водонепроницаема и довольно красива.</FloorLightCornerSmall.description>
+  
+  <FloorTileLightSquare.label>квадратная встроенная лампа</FloorTileLightSquare.label>
+  <FloorTileLightSquare.description>Квадратная встроенная в пол световая панель. Почти как металлический пол, но ещё и с подсветкой! Полностью защищена от влаги. Класть другие виды напольных покрытий поверх лампы нельзя.</FloorTileLightSquare.description>
+  
+  <FloorLightInverseCorner.label>встроенная лампа (обратный широкий угол)</FloorLightInverseCorner.label>
+  <FloorLightInverseCorner.description>Сложенная «внешним» углом встроенная в пол широкая световая панель. Водонепроницаема и довольно красива.</FloorLightInverseCorner.description>
+  
+  <FloorLightInverseCornerSmall.label>встроенная лампа (обратный узкий угол)</FloorLightInverseCornerSmall.label>
+  <FloorLightInverseCornerSmall.description>Сложенная «внешним» углом встроенная в пол узкая световая панель. Водонепроницаема и довольно красива.</FloorLightInverseCornerSmall.description>
+  
+  <FloorLightStripeMiddle.label>встроенная лампа (срединная полоса)</FloorLightStripeMiddle.label>
+  <FloorLightStripeMiddle.description>Встроенная в пол световая панель в виде полосы, расположенной посредине клетки. Водонепроницаема и довольно красива.</FloorLightStripeMiddle.description>
+  
+  <FloorLightSmallStripeMiddle.label>встроенная лампа (узкая срединная полоса)</FloorLightSmallStripeMiddle.label>
+  <FloorLightSmallStripeMiddle.description>Встроенная в пол световая панель в виде узкой полосы, расположенной посредине клетки. Водонепроницаема и довольно красива.</FloorLightSmallStripeMiddle.description>
+
+  <FloorLightSmallStripeDiagonal.label>встроенная лампа (диагональная полоса)</FloorLightSmallStripeDiagonal.label>
+  <FloorLightSmallStripeDiagonal.description>Встроенная в пол световая панель в виде узкой полосы, расположенной диагонально. Водонепроницаема и довольно красива.</FloorLightSmallStripeDiagonal.description>
+  
+  <FloorLightTriangle.label>встроенная лампа (треугольная)</FloorLightTriangle.label>
+  <FloorLightTriangle.description>Встроенная в пол треугольная световая панель. Водонепроницаема и довольно красива.</FloorLightTriangle.description>
+  
+  <FloorLightTriangleCorner.label>встроенная лампа (треугольный угол)</FloorLightTriangleCorner.label>
+  <FloorLightTriangleCorner.description>Встроенная в пол треугольная угловая световая панель. Водонепроницаема и довольно красива.</FloorLightTriangleCorner.description>
+
+</LanguageData>

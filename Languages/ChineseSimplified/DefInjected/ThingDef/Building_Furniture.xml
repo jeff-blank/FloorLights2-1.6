@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- SQUARE 地板灯S -->
+
+  <FloorLightSquare.label>地板灯(方块)</FloorLightSquare.label>
+  <FloorLightSquare.description>正方形地板灯。防水,非常漂亮.</FloorLightSquare.description>
+  <FloorLightSquare_Blueprint.label>地板灯(方块) (蓝图)</FloorLightSquare_Blueprint.label>
+  <FloorLightSquare_Frame.label>地板灯(方块) (建造中)</FloorLightSquare_Frame.label>
+  <FloorLightSquare_Frame.description>正方形地板灯。防水,非常漂亮.</FloorLightSquare_Frame.description>
+
+
+  <!-- STRIPE 地板灯S -->
+
+  <FloorLightStripe.label>地板灯 (粗长条)</FloorLightStripe.label>
+  <FloorLightStripe.description>粗长条地板灯。防水,非常漂亮.</FloorLightStripe.description>
+  <FloorLightStripe_Blueprint.label>地板灯 (粗长条) (蓝图)</FloorLightStripe_Blueprint.label>
+  <FloorLightStripe_Frame.label>地板灯 (粗长条) (建造中)</FloorLightStripe_Frame.label>
+  <FloorLightStripe_Frame.description>粗长条地板灯。防水,非常漂亮.</FloorLightStripe_Frame.description>
+
+
+  <!-- 细长条 地板灯S -->
+
+  <FloorLightSmallStripe.label>地板灯 (细长条)</FloorLightSmallStripe.label>
+  <FloorLightSmallStripe.description>细长条地板灯 ，防水,非常漂亮.</FloorLightSmallStripe.description>
+  <FloorLightSmallStripe_Blueprint.label>地板灯 (细长条) (蓝图)</FloorLightSmallStripe_Blueprint.label>
+  <FloorLightSmallStripe_Frame.label>地板灯 (细长条) (建造中)</FloorLightSmallStripe_Frame.label>
+  <FloorLightSmallStripe_Frame.description>细长条 地板灯 ，防水,非常漂亮.</FloorLightSmallStripe_Frame.description>
+
+ 
+  <!-- PLUS 地板灯S -->
+
+  <FloorLightPlus.label>地板灯 (十字形)</FloorLightPlus.label>
+  <FloorLightPlus.description>十字形地板灯 ，防水,非常漂亮.</FloorLightPlus.description>
+  <FloorLightPlus_Blueprint.label>地板灯 (十字形) (蓝图)</FloorLightPlus_Blueprint.label>
+  <FloorLightPlus_Frame.label>地板灯 (十字形) (建造中)</FloorLightPlus_Frame.label>
+  <FloorLightPlus_Frame.description>十字形地板灯 ，防水,非常漂亮.</FloorLightPlus_Frame.description>
+
+
+  <!-- CORNER 地板灯S -->
+
+  <FloorLightCorner.label>地板灯 (边角)</FloorLightCorner.label>
+  <FloorLightCorner.description>边角地板灯 ，防水,非常漂亮.</FloorLightCorner.description>
+  <FloorLightCorner_Blueprint.label>地板灯 (边角) (蓝图)</FloorLightCorner_Blueprint.label>
+  <FloorLightCorner_Frame.label>地板灯 (边角) (建造中)</FloorLightCorner_Frame.label>
+  <FloorLightCorner_Frame.description>边角地板灯 ，防水,非常漂亮.</FloorLightCorner_Frame.description>
+
+
+  <!-- SMALL CORNER 地板灯S -->
+
+  <FloorLightCornerSmall.label>地板灯 (小边角)</FloorLightCornerSmall.label>
+  <FloorLightCornerSmall.description>小边角 地板灯 ，防水,非常漂亮.</FloorLightCornerSmall.description>
+  <FloorLightCornerSmall_Blueprint.label>地板灯 (小边角) (蓝图)</FloorLightCornerSmall_Blueprint.label>
+  <FloorLightCornerSmall_Frame.label>地板灯 (小边角) (建造中)</FloorLightCornerSmall_Frame.label>
+  <FloorLightCornerSmall_Frame.description>小边角 地板灯 ,防水,非常漂亮.</FloorLightCornerSmall_Frame.description>
+
+
+  <!-- FLOOR SQUARE -->
+
+  <FloorTileLightSquare.label>方块地板灯</FloorTileLightSquare.label>
+  <FloorTileLightSquare.description>方块地板灯. 就像一个有光的金属砖！能防水但其他地砖不能放在上面.</FloorTileLightSquare.description>
+  <FloorTileLightSquare_Blueprint.label>方块地板灯 (蓝图)</FloorTileLightSquare_Blueprint.label>
+  <FloorTileLightSquare_Frame.label>方块地板灯(建造中)</FloorTileLightSquare_Frame.label>
+  <FloorTileLightSquare_Frame.description>方块地板灯. 就像一个有光的金属砖！能防水但其他地砖不能放在上面.</FloorTileLightSquare_Frame.description>
+
+
+</LanguageData>
