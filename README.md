@@ -1,4 +1,4 @@
-# Floor Lights
+# Floor Lights 2
 
 Go to [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2882927601) for the Steam version.
 
