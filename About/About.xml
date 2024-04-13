@@ -5,6 +5,7 @@
   <url>https://github.com/Temeez/FloorLights2</url>
   <supportedVersions>
     <li>1.4</li>
+    <li>1.5</li>
   </supportedVersions>
   <packageId>temeez.floorlights2</packageId>
   <description>Lights (lamps) that are integrated into the ground. These lamps used to have their power cable hidden underground, but various rim-rodents kept eating them so the cable placement had to be revisited. It is possible to build on top of the floor lights.
