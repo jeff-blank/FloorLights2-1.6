@@ -26,6 +26,11 @@ Lights (lamps) that are integrated into the ground. These lamps used to have the
 
 - Floor lamp tile | Power consumption: 2 | Radius: 1
 
+- [Path] Line
+- [Path] Plus (small texture difference with the normal plus shape)
+- [Path] Corner
+- [Path] T
+- [Path] End (small box)
 
 Special thanks to Dingo (A15) and stryth (A14) for keeping this up to date when I couldn't. :)
 
