@@ -1,0 +1,1692 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- SQUARE FLOOR LIGHTS -->
+
+  <ThingDef Name="FloorLightSquare" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Floor</altitudeLayer>
+    <passability>Standable</passability>
+    <building>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>300</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <selectable>true</selectable>
+    <size>(1,1)</size>
+    <drawStyleCategory>Floors</drawStyleCategory>
+    <costList>
+      <Steel>12</Steel>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <designationCategory>Lamps</designationCategory>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>24</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <rotatable>false</rotatable>
+    <clearBuildingArea>false</clearBuildingArea>
+    <researchPrerequisites><li>Electricity</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="FloorLightSquare">
+    <defName>FloorLightSquare</defName>
+    <label>floor light (square)</label>
+    <description>Square floor light integraded into the ground. Waterproof and quite pretty.</description>
+    <graphicData>
+      <texPath>Things/Building/Lamps/FloorLightSquare</texPath>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>12</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+  <!-- STRIPE FLOOR LIGHTS -->
+
+  <ThingDef Name="FloorLightStripe" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Floor</altitudeLayer>
+    <passability>Standable</passability>
+    <building>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>150</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <selectable>true</selectable>
+    <size>(1,1)</size>
+    <drawStyleCategory>Floors</drawStyleCategory>
+    <costList>
+      <Steel>6</Steel>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <designationCategory>Lamps</designationCategory>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>12</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <rotatable>true</rotatable>
+    <clearBuildingArea>false</clearBuildingArea>
+    <researchPrerequisites><li>Electricity</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="FloorLightStripe">
+    <defName>FloorLightStripe</defName>
+    <label>floor light (stripe)</label>
+    <description>Stripe floor light integraded into the ground. Waterproof and quite pretty.</description>
+    <graphicData>
+      <texPath>Things/Building/Lamps/FloorLightStripe</texPath>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+    </comps>
+  </ThingDef>
+
+            
+  <!-- SMALL STRIPE FLOOR LIGHTS -->
+
+  <ThingDef Name="FloorLightSmallStripe" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Floor</altitudeLayer>
+    <passability>Standable</passability>
+    <building>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>75</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <selectable>true</selectable>
+    <size>(1,1)</size>
+    <drawStyleCategory>Floors</drawStyleCategory>
+    <costList>
+      <Steel>4</Steel>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <designationCategory>Lamps</designationCategory>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>4</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <rotatable>true</rotatable>
+    <clearBuildingArea>false</clearBuildingArea>
+    <researchPrerequisites><li>Electricity</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="FloorLightSmallStripe">
+    <defName>FloorLightSmallStripe</defName>
+    <label>floor light (small stripe)</label>
+    <description>Small stripe floor light integraded into the ground. Waterproof and quite pretty.</description>
+    <graphicData>
+      <texPath>Things/Building/Lamps/FloorLightSmallStripe</texPath>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+    </comps>
+  </ThingDef>
+
+            
+
+  <!-- PLUS FLOOR LIGHTS -->
+
+  <ThingDef Name="FloorLightPlus" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Floor</altitudeLayer>
+    <passability>Standable</passability>
+    <building>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>225</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <selectable>true</selectable>
+    <size>(1,1)</size>
+    <drawStyleCategory>Floors</drawStyleCategory>
+    <costList>
+      <Steel>9</Steel>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <designationCategory>Lamps</designationCategory>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>18</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <rotatable>false</rotatable>
+    <clearBuildingArea>false</clearBuildingArea>
+    <researchPrerequisites><li>Electricity</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="FloorLightPlus">
+    <defName>FloorLightPlus</defName>
+    <label>floor light (plus)</label>
+    <description>Plus floor light integraded into the ground. Waterproof and quite pretty.</description>
+    <graphicData>
+      <texPath>Things/Building/Lamps/FloorLightPlus</texPath>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>9</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+    </comps>
+  </ThingDef>
+
+            
+  <!-- CORNER FLOOR LIGHTS -->
+
+  <ThingDef Name="FloorLightCorner" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Floor</altitudeLayer>
+    <passability>Standable</passability>
+    <building>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>225</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <selectable>true</selectable>
+    <size>(1,1)</size>
+    <drawStyleCategory>Floors</drawStyleCategory>
+    <costList>
+      <Steel>9</Steel>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <designationCategory>Lamps</designationCategory>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>18</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <rotatable>true</rotatable>
+    <clearBuildingArea>false</clearBuildingArea>
+    <researchPrerequisites><li>Electricity</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="FloorLightCorner">
+    <defName>FloorLightCorner</defName>
+    <label>floor light (corner)</label>
+    <description>Corner floor light integraded into the ground. Waterproof and quite pretty.</description>
+    <graphicData>
+      <texPath>Things/Building/Lamps/FloorLightCorner</texPath>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>9</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+    </comps>
+  </ThingDef>
+
+            
+
+<!-- INVERSE CORNER FLOOR LIGHTS -->
+
+  <ThingDef Name="FloorLightInverseCorner" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Floor</altitudeLayer>
+    <passability>Standable</passability>
+    <building>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>200</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <selectable>true</selectable>
+    <size>(1,1)</size>
+    <drawStyleCategory>Floors</drawStyleCategory>
+    <costList>
+      <Steel>3</Steel>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <designationCategory>Lamps</designationCategory>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>6</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <rotatable>true</rotatable>
+    <clearBuildingArea>false</clearBuildingArea>
+    <researchPrerequisites><li>Electricity</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="FloorLightInverseCorner">
+    <defName>FloorLightInverseCorner</defName>
+    <label>floor light (inverse corner)</label>
+    <description>Inverse corner floor light integraded into the ground. Waterproof and quite pretty.</description>
+    <graphicData>
+      <texPath>Things/Building/Lamps/FloorLightInverseCorner</texPath>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+    </comps>
+  </ThingDef>
+
+            
+
+<!-- SMALL CORNER FLOOR LIGHTS -->
+
+  <ThingDef Name="FloorLightCornerSmall" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Floor</altitudeLayer>
+    <passability>Standable</passability>
+    <building>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>125</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <selectable>true</selectable>
+    <size>(1,1)</size>
+    <drawStyleCategory>Floors</drawStyleCategory>
+    <costList>
+      <Steel>6</Steel>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <designationCategory>Lamps</designationCategory>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>7</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <rotatable>true</rotatable>
+    <clearBuildingArea>false</clearBuildingArea>
+    <researchPrerequisites><li>Electricity</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="FloorLightCornerSmall">
+    <defName>FloorLightCornerSmall</defName>
+    <label>floor light (small corner)</label>
+    <description>Small corner floor light integraded into the ground. Waterproof and quite pretty.</description>
+    <graphicData>
+      <texPath>Things/Building/Lamps/FloorLightSmallCorner</texPath>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>5</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+    </comps>
+  </ThingDef>
+
+            
+
+<!-- SMALL INVERSE CORNER FLOOR LIGHTS -->
+
+  <ThingDef Name="FloorLightInverseCornerSmall" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Floor</altitudeLayer>
+    <passability>Standable</passability>
+    <building>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>100</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <selectable>true</selectable>
+    <size>(1,1)</size>
+    <drawStyleCategory>Floors</drawStyleCategory>
+    <costList>
+      <Steel>2</Steel>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <designationCategory>Lamps</designationCategory>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>2</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <rotatable>true</rotatable>
+    <clearBuildingArea>false</clearBuildingArea>
+    <researchPrerequisites><li>Electricity</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="FloorLightInverseCornerSmall">
+    <defName>FloorLightInverseCornerSmall</defName>
+    <label>floor light (small inverse corner)</label>
+    <description>Small inverse corner floor light integraded into the ground. Waterproof and quite pretty.</description>
+    <graphicData>
+      <texPath>Things/Building/Lamps/FloorLightSmallInverseCorner</texPath>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>1</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+    </comps>
+  </ThingDef>
+
+            
+
+<!-- MIDDLE STRIPE FLOOR LIGHTS -->
+
+  <ThingDef Name="FloorLightStripeMiddle" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Floor</altitudeLayer>
+    <passability>Standable</passability>
+    <building>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>150</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <selectable>true</selectable>
+    <size>(1,1)</size>
+    <drawStyleCategory>Floors</drawStyleCategory>
+    <costList>
+      <Steel>6</Steel>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <designationCategory>Lamps</designationCategory>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>12</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <rotatable>true</rotatable>
+    <clearBuildingArea>false</clearBuildingArea>
+    <researchPrerequisites><li>Electricity</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="FloorLightStripeMiddle">
+    <defName>FloorLightStripeMiddle</defName>
+    <label>floor light (middle stripe)</label>
+    <description>Middle stripe floor light integraded into the ground. Waterproof and quite pretty.</description>
+    <graphicData>
+      <texPath>Things/Building/Lamps/FloorLightStripeMiddle</texPath>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+    </comps>
+  </ThingDef>
+
+            
+
+<!-- SMALL MIDDLE STRIPE FLOOR LIGHTS -->
+
+  <ThingDef Name="FloorLightSmallStripeMiddle" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Floor</altitudeLayer>
+    <passability>Standable</passability>
+    <building>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>75</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <selectable>true</selectable>
+    <size>(1,1)</size>
+    <drawStyleCategory>Floors</drawStyleCategory>
+    <costList>
+      <Steel>4</Steel>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <designationCategory>Lamps</designationCategory>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>4</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <rotatable>true</rotatable>
+    <clearBuildingArea>false</clearBuildingArea>
+    <researchPrerequisites><li>Electricity</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="FloorLightSmallStripeMiddle">
+    <defName>FloorLightSmallStripeMiddle</defName>
+    <label>floor light (small middle stripe)</label>
+    <description>Small stripe floor light integraded into the ground. Waterproof and quite pretty.</description>
+    <graphicData>
+      <texPath>Things/Building/Lamps/FloorLightSmallStripeMiddle</texPath>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+    </comps>
+  </ThingDef>
+
+            
+
+<!-- SMALL DIAGONAL STRIPE FLOOR LIGHTS -->
+
+  <ThingDef Name="FloorLightSmallStripeDiagonal" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Floor</altitudeLayer>
+    <passability>Standable</passability>
+    <building>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>75</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <selectable>true</selectable>
+    <size>(1,1)</size>
+    <drawStyleCategory>Floors</drawStyleCategory>
+    <costList>
+      <Steel>4</Steel>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <designationCategory>Lamps</designationCategory>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>4</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <rotatable>true</rotatable>
+    <clearBuildingArea>false</clearBuildingArea>
+    <researchPrerequisites><li>Electricity</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="FloorLightSmallStripeDiagonal">
+    <defName>FloorLightSmallStripeDiagonal</defName>
+    <label>floor light (small diagonal stripe)</label>
+    <description>Small diagonal stripe floor light integraded into the ground. Waterproof and quite pretty.</description>
+    <graphicData>
+      <texPath>Things/Building/Lamps/FloorLightSmallStripeDiagonal</texPath>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+    </comps>
+  </ThingDef>
+
+            
+
+  <!-- TRIANGLE CORNER FLOOR LIGHTS -->
+
+  <ThingDef Name="FloorLightTriangleCorner" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Floor</altitudeLayer>
+    <passability>Standable</passability>
+    <building>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>150</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <selectable>true</selectable>
+    <size>(1,1)</size>
+    <drawStyleCategory>Floors</drawStyleCategory>
+    <costList>
+      <Steel>6</Steel>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <designationCategory>Lamps</designationCategory>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>12</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <rotatable>true</rotatable>
+    <clearBuildingArea>false</clearBuildingArea>
+    <researchPrerequisites><li>Electricity</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="FloorLightTriangleCorner">
+    <defName>FloorLightTriangleCorner</defName>
+    <label>floor light (triangle corner)</label>
+    <description>Corner triangle floor light integraded into the ground. Waterproof and quite pretty.</description>
+    <graphicData>
+      <texPath>Things/Building/Lamps/FloorLightTriangleCorner</texPath>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+    </comps>
+  </ThingDef>
+
+            
+
+  <!-- TRIANGLE FLOOR LIGHTS -->
+
+  <ThingDef Name="FloorLightTriangle" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Floor</altitudeLayer>
+    <passability>Standable</passability>
+    <building>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>150</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <selectable>true</selectable>
+    <size>(1,1)</size>
+    <drawStyleCategory>Floors</drawStyleCategory>
+    <costList>
+      <Steel>6</Steel>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <designationCategory>Lamps</designationCategory>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>12</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <rotatable>true</rotatable>
+    <clearBuildingArea>false</clearBuildingArea>
+    <researchPrerequisites><li>Electricity</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="FloorLightTriangle">
+    <defName>FloorLightTriangle</defName>
+    <label>floor light (triangle)</label>
+    <description>Triangle floor light integraded into the ground. Waterproof and quite pretty.</description>
+    <graphicData>
+      <texPath>Things/Building/Lamps/FloorLightTriangle</texPath>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+  <!-- Floor Light Path Lamps -->
+  <!--  -->
+    <ThingDef Name="FloorLightPathEnd" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Floor</altitudeLayer>
+    <passability>Standable</passability>
+    <building>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>200</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <selectable>true</selectable>
+    <size>(1,1)</size>
+    <drawStyleCategory>Floors</drawStyleCategory>
+    <costList>
+      <Steel>3</Steel>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <designationCategory>Lamps</designationCategory>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>6</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <rotatable>true</rotatable>
+    <clearBuildingArea>false</clearBuildingArea>
+    <researchPrerequisites><li>Electricity</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="FloorLightPathEnd">
+    <defName>FloorLightPathEnd</defName>
+    <label>FL Path (end)</label>
+    <description>The lighted path ends here. Waterproof and quite pretty.</description>
+    <graphicData>
+      <texPath>Things/Building/Lamps/FL_Path_End</texPath>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+    </comps>
+  </ThingDef>
+  <!---->
+    <ThingDef Name="FloorLightPathLine" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Floor</altitudeLayer>
+    <passability>Standable</passability>
+    <building>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>150</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <selectable>true</selectable>
+    <size>(1,1)</size>
+    <drawStyleCategory>Floors</drawStyleCategory>
+    <costList>
+      <Steel>6</Steel>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <designationCategory>Lamps</designationCategory>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>12</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <rotatable>true</rotatable>
+    <clearBuildingArea>false</clearBuildingArea>
+    <researchPrerequisites><li>Electricity</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="FloorLightPathLine">
+    <defName>FloorLightPathLine</defName>
+    <label>FL Path (line)</label>
+    <description>Straight light path piece that is integraded into the ground. Waterproof and quite pretty.</description>
+    <graphicData>
+      <texPath>Things/Building/Lamps/FL_Path_Line</texPath>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+    </comps>
+  </ThingDef>
+  <!---->
+  <ThingDef Name="FloorLightPathCorner" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Floor</altitudeLayer>
+    <passability>Standable</passability>
+    <building>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>225</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <selectable>true</selectable>
+    <size>(1,1)</size>
+    <drawStyleCategory>Floors</drawStyleCategory>
+    <costList>
+      <Steel>9</Steel>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <designationCategory>Lamps</designationCategory>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>18</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <rotatable>true</rotatable>
+    <clearBuildingArea>false</clearBuildingArea>
+    <researchPrerequisites><li>Electricity</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="FloorLightPathCorner">
+    <defName>FloorLightPathCorner</defName>
+    <label>FL Path (corner)</label>
+    <description>Corner light path piece that is integraded into the ground. Waterproof and quite pretty.</description>
+    <graphicData>
+      <texPath>Things/Building/Lamps/FL_Path_Corner</texPath>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>9</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+    </comps>
+  </ThingDef>
+  <!---->
+  <ThingDef Name="FloorLightPathPlus" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Floor</altitudeLayer>
+    <passability>Standable</passability>
+    <building>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>225</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <selectable>true</selectable>
+    <size>(1,1)</size>
+    <drawStyleCategory>Floors</drawStyleCategory>
+    <costList>
+      <Steel>9</Steel>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <designationCategory>Lamps</designationCategory>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>18</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <rotatable>false</rotatable>
+    <clearBuildingArea>false</clearBuildingArea>
+    <researchPrerequisites><li>Electricity</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="FloorLightPathPlus">
+    <defName>FloorLightPathPlus</defName>
+    <label>FL Path (plus)</label>
+    <description>Plus light path piece that is integraded into the ground. Waterproof and quite pretty.</description>
+    <graphicData>
+      <texPath>Things/Building/Lamps/FL_Path_Plus</texPath>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>9</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+    </comps>
+  </ThingDef>
+  <!---->
+  <ThingDef Name="FloorLightT" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Floor</altitudeLayer>
+    <passability>Standable</passability>
+    <building>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>225</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <selectable>true</selectable>
+    <size>(1,1)</size>
+    <drawStyleCategory>Floors</drawStyleCategory>
+    <costList>
+      <Steel>9</Steel>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <designationCategory>Lamps</designationCategory>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>18</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <rotatable>true</rotatable>
+    <clearBuildingArea>false</clearBuildingArea>
+    <researchPrerequisites><li>Electricity</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="FloorLightT">
+    <defName>FloorLightT</defName>
+    <label>FL Path (T)</label>
+    <description>T-shaped light path piece that is integraded into the ground. Waterproof and quite pretty.</description>
+    <graphicData>
+      <texPath>Things/Building/Lamps/FL_Path_T</texPath>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>9</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+    </comps>
+  </ThingDef>
+
+            
+  <!-- FLOOR SQUARE -->
+
+  <ThingDef Name="FloorTileLightSquare" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building</thingClass>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <passability>Standable</passability>
+    <building>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <MaxHitPoints>285</MaxHitPoints>
+      <WorkToBuild>35</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <selectable>true</selectable>
+    <size>(1,1)</size>
+    <drawStyleCategory>Floors</drawStyleCategory>
+    <costList>
+      <Steel>3</Steel>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <designationCategory>Floors</designationCategory>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <clearBuildingArea>false</clearBuildingArea>
+    <researchPrerequisites><li>Electricity</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="FloorTileLightSquare">
+    <defName>FloorTileLightSquare</defName>
+    <label>square floor lamp</label>
+    <description>Square floor light tile. Almost like a metal tile with a light! Waterproof and other floor tiles can not be put on top of this.</description>
+    <graphicData>
+      <texPath>Things/Building/Lamps/FloorLightSquare</texPath>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <transmitsPower>true</transmitsPower>
+        <basePowerConsumption>2</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Glower">
+        <glowRadius>1</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+
+
+<!-- SMALL STRIPE D FLOOR LIGHTS -->
+
+  <ThingDef Name="FloorLightSmallDStripe" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Floor</altitudeLayer>
+    <passability>Standable</passability>
+    <building>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>75</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <selectable>true</selectable>
+    <size>(1,1)</size>
+    <costList>
+      <Steel>6</Steel>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <designationCategory>Lamps</designationCategory>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>4</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <rotatable>true</rotatable>
+    <clearBuildingArea>false</clearBuildingArea>
+    <researchPrerequisites><li>Electricity</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="FloorLightSmallDStripe">
+    <defName>FloorLightSmallDStripe</defName>
+    <label>floor light (small stripes)</label>
+    <description>Small stripe floor light integraded into the ground. Waterproof and quite pretty.</description>
+    <graphicData>
+      <texPath>Things/Building/Lamps/FloorLightSmallStripeD</texPath>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>5</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+    </comps>
+  </ThingDef>
+  
+<!-- SMALL END FLOOR LIGHTS -->
+
+  <ThingDef Name="FloorLightEndSmall" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Floor</altitudeLayer>
+    <passability>Standable</passability>
+    <building>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>125</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <selectable>true</selectable>
+    <size>(1,1)</size>
+    <costList>
+      <Steel>9</Steel>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <designationCategory>Lamps</designationCategory>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>9</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <rotatable>true</rotatable>
+    <clearBuildingArea>false</clearBuildingArea>
+    <researchPrerequisites><li>Electricity</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="FloorLightEndSmall">
+    <defName>FloorLightEndSmall</defName>
+    <label>floor light (end corner)</label>
+    <description>Small end floor light integraded into the ground. Waterproof and quite pretty.</description>
+    <graphicData>
+      <texPath>Things/Building/Lamps/FloorLightSmallEnd</texPath>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>5</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!-- SMALL INVERSE CORNER C FLOOR LIGHTS -->
+
+  <ThingDef Name="FloorLightInverseCornerCSmall" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Floor</altitudeLayer>
+    <passability>Standable</passability>
+    <building>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>100</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <selectable>true</selectable>
+    <size>(1,1)</size>
+    <costList>
+      <Steel>3</Steel>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <designationCategory>Lamps</designationCategory>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>3</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <rotatable>true</rotatable>
+    <clearBuildingArea>false</clearBuildingArea>
+    <researchPrerequisites><li>Electricity</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="FloorLightInverseCornerCSmall">
+    <defName>FloorLightInverseCornerCSmall</defName>
+    <label>floor light (small inverse corners)</label>
+    <description>Small inverse corner floor lights integraded into the ground. Waterproof and quite pretty.</description>
+    <graphicData>
+      <texPath>Things/Building/Lamps/FloorLightSmallInverseCornerC</texPath>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>2</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!-- SMALL INVERSE CORNER 2 FLOOR LIGHTS -->
+
+  <ThingDef Name="FloorLightInverseCorner2Small" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Floor</altitudeLayer>
+    <passability>Standable</passability>
+    <building>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>100</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <selectable>true</selectable>
+    <size>(1,1)</size>
+    <costList>
+      <Steel>3</Steel>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <designationCategory>Lamps</designationCategory>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>3</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <rotatable>true</rotatable>
+    <clearBuildingArea>false</clearBuildingArea>
+    <researchPrerequisites><li>Electricity</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="FloorLightInverseCorner2Small">
+    <defName>FloorLightInverseCorner2Small</defName>
+    <label>floor light (small inverse 2 corners)</label>
+    <description>Small inverse corner floor lights integraded into the ground. Waterproof and quite pretty.</description>
+    <graphicData>
+      <texPath>Things/Building/Lamps/FloorLightSmallInverseCorner2</texPath>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>2</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!-- SMALL INVERSE CORNER 3 FLOOR LIGHTS -->
+
+  <ThingDef Name="FloorLightInverseCorner3Small" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Floor</altitudeLayer>
+    <passability>Standable</passability>
+    <building>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>100</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <selectable>true</selectable>
+    <size>(1,1)</size>
+    <costList>
+      <Steel>4</Steel>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <designationCategory>Lamps</designationCategory>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>4</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <rotatable>true</rotatable>
+    <clearBuildingArea>false</clearBuildingArea>
+    <researchPrerequisites><li>Electricity</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="FloorLightInverseCorner3Small">
+    <defName>FloorLightInverseCorner3Small</defName>
+    <label>floor light (small inverse 3 corners)</label>
+    <description>Small inverse corner floor lights integraded into the ground. Waterproof and quite pretty.</description>
+    <graphicData>
+      <texPath>Things/Building/Lamps/FloorLightSmallInverseCorner3</texPath>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+    </comps>
+  </ThingDef>
+
+<!-- SMALL INVERSE CORNER 4 FLOOR LIGHTS -->
+
+  <ThingDef Name="FloorLightInverseCorner4Small" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Floor</altitudeLayer>
+    <passability>Standable</passability>
+    <building>
+      <isInert>true</isInert>
+      <isEdifice>false</isEdifice>
+    </building>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>100</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <selectable>true</selectable>
+    <size>(1,1)</size>
+    <costList>
+      <Steel>6</Steel>
+    </costList>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <designationCategory>Lamps</designationCategory>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>5</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+    <rotatable>true</rotatable>
+    <clearBuildingArea>false</clearBuildingArea>
+    <researchPrerequisites><li>Electricity</li></researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="FloorLightInverseCorner4Small">
+    <defName>FloorLightInverseCorner4Small</defName>
+    <label>floor light (small inverse 4 corners)</label>
+    <description>Small inverse corner floor lights integraded into the ground. Waterproof and quite pretty.</description>
+    <graphicData>
+      <texPath>Things/Building/Lamps/FloorLightSmallInverseCorner4</texPath>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>4</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+
+</Defs>
